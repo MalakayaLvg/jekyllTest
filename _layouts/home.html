@@ -1,0 +1,7 @@
+{% for file in site.static_files %}
+<!--    {% if file.image %}-->
+<img src="{{ file.path }}" alt="{{ file.name }}" style="height: 100px;width: 100px">
+<!--    {% endif%}-->
+{{file.path}}
+<br>
+{% endfor %}
